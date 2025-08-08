@@ -10,6 +10,7 @@
     "scripts": {
         "lint": "tsc",
         "build": "tsup",
+        "start": "node dist/index.js",
         "ci": "tsc && pnpm test && tsup",
         "test": "vitest run --config vitest.config.ts",
         "prepare": "node .husky/install.mjs",
