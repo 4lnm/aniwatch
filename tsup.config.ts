@@ -2,11 +2,11 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
     format: ["esm"],
-    entry: ["./src/index.ts"],
+    entry: ["./src/server.ts"],
     dts: true,
     shims: true,
     clean: true,
-    splitting: true,
+    splitting: false,
     // minify: true,
     // minifySyntax: true,
     // minifyIdentifiers: true,
