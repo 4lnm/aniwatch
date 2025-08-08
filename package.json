@@ -1,4 +1,4 @@
-{
+    {
     "name": "aniwatch",
     "version": "2.24.0",
     "description": "📦 A scraper package serving anime information from hianimez.to",
@@ -9,8 +9,8 @@
     "type": "module",
     "scripts": {
         "lint": "tsc",
-        "build": "tsup",
-        "start": "node dist/index.js",
+        "build": "tsup src/index.ts",
+        "start": "npm run build && node dist/index.js",
         "ci": "tsc && pnpm test && tsup",
         "test": "vitest run --config vitest.config.ts",
         "prepare": "node .husky/install.mjs",
@@ -59,4 +59,4 @@
         "LICENSE",
         "package.json"
     ]
-}
+    }
